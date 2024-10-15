@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <style>
+      .thumbnail{
+        width: 300px;
+        margin-left: 12px;
+        cursor: pointer;
+      }
+      .search-bar{ 
+       font-size: 20px;
+       margin-left: 12px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+      }
+      .cat1{
+        width: 200px;
+        border-radius: 20px;
+        vertical-align: top;
+         /*object-fit:contain;object-position:left*/
+      }
+      .cat2{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: top;
+        margin-left: 20px;
+      }
+      .cat3{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 100px;
+        vertical-align: top;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      .thumbnail2{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;/*It will cover the given WxH px. And no any strink*/
+        object-position: left;/*without this line object position in center*/
+        margin-left: 10px;
+      }
+      .thumbnail3{
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        /*Without object-fit or object-position the image will be strinked within that px value.*/
+      }
+      .thumbnail4{
+        width: 400px;
+        height: 600px;
+        object-fit: contain;/*No any strink*/
+        object-position: left;/*this line could not work because width*/
+        object-position: bottom;/*this line will work bacause height is 600px than width 400px*/
+        margin-left: 10px;
+        border-style: double;
+        border-width: 6px;
+        border-color: black;
+      }
+      .thumbnail5{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        object-position: center;
+        border-style: solid;
+        border-width: 4px;
+        border-color: red;
+        margin-left: 10px;
+      }
+      .search2{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border-radius: 10px; 
+        border-style: solid;
+        border-color: gray;
+        color: black; 
+      }
+      .googlesearch{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        width: 500px;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+      }
+      .googlesearch:active{
+        border-color: white;
+      }
+      /*LinkedIn signup*/
+      .button{
+        margin-left: 20px;
+        width: 370px;
+        margin-bottom: 20px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-radius: 30px;
+        color:white;
+        background-color: rgb(2, 96, 190);
+        border:none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .tweetcat{
+        width: 80px;
+        height: 80px;
+        object-fit:cover;
+        border-radius: 40px;
+        margin-left: 20px;
+        vertical-align: middle;
+      }
+      .TweetButton{
+        color: white;
+  background-color: rgb(29, 155, 240);
+  vertical-align: middle;
+  padding-top:10px; 
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 18px;
+  border: none;
+  font-weight:bold;/*Font BOLD*/
+  font-size: 15px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+.TweetButton:hover{
+  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
+  /*Horizontal-5px, Vertical-5px, Blur-10px. In rgba-"a" means opacity or how see through it.*/
+}
+.TweetButton:active{
+  opacity: 0.5;
+}
+.WH{
+  border: none;
+  margin-left: 10px;
+  font-size: 25px;
+  vertical-align: middle;
+}
+    </style>
+  </head>
+  <body>
+<img class="thumbnail" title="Two person's are talking" src="thumbnails/thumbnail-1.webp">
+<br>
+<input class="search-bar" type="text" placeholder="Search">
+<br>
+<img class="cat1" src="thumbnails/cat.webp">
+
+<img class="cat2" src="thumbnails/cat.webp">
+
+<img class="cat3" src="thumbnails/cat.webp">
+
+<br>
+<img class="thumbnail2" src="thumbnails/thumbnail-1.webp">
+
+<img class="thumbnail3" src="thumbnails/thumbnail-1.webp">
+<br>
+<img class="thumbnail4" src="thumbnails/thumbnail-1.webp">
+
+<img class="thumbnail5" src="thumbnails/thumbnail-1.webp">
+<br>
+<input class="search2" type="text" placeholder="Search">
+<br>
+<input class="googlesearch" type="text" placeholder="Search Google or type a URL">
+<br>
+
+<p style="margin-left: 20px;">Email</p>
+<input type="text" style="width: 360px; padding-top: 5px;padding-bottom: 5px;border-radius: 5px;border-style: solid; margin-left: 20px;">
+<p style="margin-left: 20px;">
+  By clicking Agree & Join, you agree to the private policy.
+</p>
+<button class="button">Agree & Join</button>
+<br>
+<!--Tweeter text box-->
+<img class="tweetcat" src="thumbnails/cat.webp">
+<input type="text" class="WH" placeholder="What's happening?">
+<button class="TweetButton">Tweet</button>
+</body>
+</html>  
