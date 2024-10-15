@@ -1,0 +1,191 @@
+
+.thumbnail{
+  width: 100%;
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-title{
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 0px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.video-author{
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(96, 96, 96);
+  margin-bottom: 4px;
+}
+.video-stats{
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(96, 96, 96);
+  margin-top: 0px;
+}
+
+.video-time{
+  background-color: rgba(0, 0, 0, 0.884);
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+}  
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr; 
+}
+
+.video-grid{
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+}
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:751px) and (max-width:999px){
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1000px){
+  .video-title{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-grid{
+    font-size: 14px;
+  }
+}
+@media (max-width:1200.2){
+  .video-grid{
+    padding-left: 96px;
+  }
+}
+.dp1{
+  border-radius: 25px;
+  width:36px;
+  cursor: pointer; 
+}
+.dp-one{
+  position: relative;
+}
+.dp-container{
+  position: relative;
+  display: inline-block;
+}
+.popup{
+  position: absolute;
+  display: flex;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding:12px 12px;
+  width: 200px;
+  background-color: white;
+  opacity: 0; 
+  transition: opacity 0.15s;
+  pointer-events:none;
+  align-items: center;
+  z-index: 300;
+  top:40px;
+}
+.dp-container:hover .popup{
+  opacity: 1;
+}
+.dp2{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 8px;
+}
+.popup-detail{
+  flex: 1;
+}
+.popup-dp-author{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+
+}
+.popup-dp-subscribers{
+  font-size: 14px;
+  color: rgb(101, 100, 100);
+}
+
+
+/*Exercise*/
+
+.dogs{
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+width: 200px;
+margin-left: 10px;
+display: inline-block;
+margin-top: 10px;
+}
+.dog-white{
+width: 200px;
+height: 200px;
+object-fit: cover;
+margin-bottom: 12px;
+}
+.name{
+font-size: 18px;
+font-weight: bold;
+margin-left: 8px;
+margin-bottom: 4px;
+}
+.mutual-friends{
+color: rgb(100, 100, 100);
+margin-left: 8px;
+margin-bottom: 12px;
+}
+.add-friend-button{
+color: white;
+background-color: rgb(7, 100, 223);
+border-radius: 4px;
+padding-top: 10px;
+padding-bottom: 10px;
+border: none;
+padding-left: 20px;
+padding-right: 20px;
+font-size: 16px;
+margin-left: 8px;
+margin-bottom: 10px;
+}
+.add-friend-button:hover{
+opacity: 0.8;
+cursor: pointer;
+}
+.add-friend-button:active{
+opacity: 0.5;
+}
+.smallDP,.smallDPinfo{
+display: inline-block;
+margin-bottom: 5px;
+}
+.dogDP{
+width: 40px;
+border-radius: 25px;
+margin-left: 8px;
+margin-top: 3px;
+}
+.smallDPinfo{
+vertical-align: top;
+}
